@@ -8,7 +8,7 @@ from PIL import (
 
 # ASCII characters mapping
 ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", ".", " ", "░", "▒", "▓", "█"]
-IMAGE_PATH = "./killua4.png"
+IMAGE_PATH = "YOUR_FILE_PATH_HERE"
 PIL_GRAYSCALE = 'L'
 PIL_WIDTH_INDEX = 0
 PIL_HEIGHT_INDEX = 1
@@ -19,7 +19,7 @@ COMMON_MONO_FONT_FILENAMES = [
 ]
 
 # Resize the image for ASCII conversion
-def resize_image(image, new_width=160):
+def resize_image(image, new_width=350):
     width, height = image.size
     aspect_ratio = height / width
     new_height = int(aspect_ratio * new_width * 0.5)  # Adjust for aspect ratio
@@ -110,11 +110,6 @@ def main():
     # Save ASCII art as a PNG image
     ascii_to_image(ascii_art, './ascii_art.png')
 
-    # Save ASCII art to a text file
-    ascii_art_path = os.path.expanduser("~/.config/nvim/ascii_art.txt")
-    with open(ascii_art_path, "w") as f:
-        f.write(ascii_art)
-    
     print(ascii_art)
 
 if __name__ == "__main__":
