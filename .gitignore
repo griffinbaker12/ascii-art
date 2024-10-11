@@ -2,3 +2,5 @@ archive/*
 venv/*
 my_main.py
 .DS_Store
+ascii_art.txt
+ascii_art.png
