@@ -1,0 +1,4 @@
+archive/*
+venv/*
+my_main.py
+.DS_Store
