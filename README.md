@@ -24,7 +24,7 @@ And here's an example Neovim dashboard:
 - Python 3.x
 - Pillow (Python Imaging Library)
 
-Make sure you are in a virtual environment and then install the required dependencies by running (only Pillow):
+Make sure you are in a virtual environment and then install the required dependencies (only Pillow) by running:
 
 ```bash
 pip install -r requirements.txt
