@@ -7,7 +7,10 @@ from PIL import (
 )
 
 # ASCII characters mapping
+# 2 sets for different flavors
 ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", ".", " ", "░", "▒", "▓", "█"]
+ASCII_CHARS_2 =  [' ','.',':','-','=','+','*','#','%','@'] 
+
 IMAGE_PATH = "YOUR_FILE_PATH_HERE"
 PIL_GRAYSCALE = 'L'
 PIL_WIDTH_INDEX = 0
